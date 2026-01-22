@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Camera Viewer</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+        <main class="stage">
+        <div class="mockup">
+            <!-- orig image not warped -->
+            <img class="mockup-img" src="photos/web-cam-mockup.png" alt="Camera mockup" />
+
+            <!-- camera screen -->
+            <div class="screen">
+            <img class="screen-photo" id="screenPhoto" alt="Camera photo" />
+            </div>
+
+            <!-- click area over L and R buttons -->
+            <button class="hotspot hotspot-left" id="prevBtn" aria-label="Previous photo"></button>
+            <button class="hotspot hotspot-right" id="nextBtn" aria-label="Next photo"></button>
+        </div>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+</html>
