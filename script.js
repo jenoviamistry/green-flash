@@ -15,7 +15,7 @@ const photos = [
     { src: "photos/simba-at-beach.jpeg", date: "2025/06/20"},
     {src: "photos/park-with-friends.jpeg", date: "2025/02/28" },
     {src: "photos/montara.jpeg", date: "2024/06/14" },
-    { src: "photos/02.jpeg", date: "2017/07/13" },
+    { src: "photos/grand-canyon-2.jpeg", date: "2017/07/13" },
     { src: "photos/grand-canyon.jpeg", date: "2017/07/09" },
     { src: "photos/me-with-camera.jpeg", date: "2010/12/08" },
 
