@@ -126,7 +126,7 @@ html, body {
 
 .date-text {
   position: absolute;
-  bottom: 9%;
+  bottom: 8%;
   right: 2%;
   font-family: "CameraDate", monospace !important;
   /*font-size: 1.4vmin;*/
