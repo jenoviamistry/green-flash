@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="en">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Camera Viewer</title>
         <link rel="stylesheet" href="styles.css" />
     </head>
@@ -13,14 +13,25 @@
             <!-- orig image not warped -->
             <img class="mockup-img" src="photos/web-cam-mockup.png" alt="Camera mockup" />
 
-            <!-- camera screen -->
-            <div class="screen">
-            <img class="screen-photo" id="screenPhoto" alt="Camera photo" />
-            </div>
-
             <!-- click area over L and R buttons -->
             <button class="hotspot hotspot-left" id="prevBtn" aria-label="Previous photo"></button>
             <button class="hotspot hotspot-right" id="nextBtn" aria-label="Next photo"></button>
+            
+            <div id="instruction-text" class="camera-instruction">
+                Press < > on camera to flip through
+            </div>
+            
+            <div class="screen">
+                <img class="screen-photo" id="screenPhoto" alt="Camera photo" />
+
+                <!-- UI overlay -->
+                <div class="camera-ui">
+                    <img class="battery-icon" src="photos/battery (1).png" alt="Battery" />
+                    <div class="date-text" id="dateText">07/15/2025</div>
+                </div>                                                                  
+            </div>
+
+
         </div>
         </main>
 
