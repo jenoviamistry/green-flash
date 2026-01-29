@@ -3,7 +3,7 @@ const photos = [
    /* {src: "photos/bellagio-view.jpeg", date: "2026/01/05" },*/
    /* year / month / day */ 
     { src: "photos/house.jpeg", date: "2026/01/28" },
-    { src: "photos/pescadero2.jpeg", date: "2026/01/25" },
+   /* { src: "photos/pescadero2.jpeg", date: "2026/01/25" },*/
     {src: "photos/video-poker.jpeg", date: "2026/01/05" },
     {src: "photos/caesars-palace.jpeg", date: "2026/01/04" },
     {src: "photos/santa-barbara.jpeg", date: "2025/12/30" },
