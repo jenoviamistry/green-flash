@@ -1,6 +1,8 @@
 // photo filenames
 const photos = [
    /* {src: "photos/bellagio-view.jpeg", date: "2026/01/05" },*/
+   /* year / month / day */ 
+    { src: "photos/pescadero.jpeg", date: "2026/01/25" },
     {src: "photos/video-poker.jpeg", date: "2026/01/05" },
     {src: "photos/caesars-palace.jpeg", date: "2026/01/04" },
     {src: "photos/santa-barbara.jpeg", date: "2025/12/30" },
@@ -11,8 +13,13 @@ const photos = [
     {src: "photos/pismo-beach.jpeg", date: "2025/11/29" },
     { src: "photos/veronica-and-i.jpeg", date: "2025/11/16" },
     { src: "photos/neighbors-car.jpeg", date: "2025/11/08" },
+    { src: "photos/pink-golgi.jpeg", date: "2025/10/14" },
     {src: "photos/orange-peels.jpeg", date: "2025/10/11" },
     { src: "photos/simba-at-beach.jpeg", date: "2025/06/20"},
+    { src: "photos/empty-house.jpeg", date: "2025/06/09" },
+    { src: "photos/zoo.jpeg", date: "2025/06/06" },
+    { src: "photos/neighbor.jpeg", date: "2025/03/19" },
+    { src: "photos/golgi-sleepy.jpeg", date: "2025/03/15" },
     {src: "photos/park-with-friends.jpeg", date: "2025/02/28" },
     {src: "photos/montara.jpeg", date: "2024/06/14" },
     { src: "photos/grand-canyon-2.jpeg", date: "2017/07/13" },
