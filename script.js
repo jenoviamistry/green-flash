@@ -6,7 +6,7 @@ const photos = [
    /* { src: "photos/pescadero2.jpeg", date: "2026/01/25" },*/
     {src: "photos/video-poker.jpeg", date: "2026/01/05" },
     {src: "photos/caesars-palace.jpeg", date: "2026/01/04" },
-    {src: "photos/santa-barbara.jpeg", date: "2025/12/30" },
+    {src: "photos/santa-barbara-edit.jpeg", date: "2025/12/30" },
     {src: "photos/venice-beach.jpeg", date: "2025/12/28" },
     {src: "photos/art-market-cat.jpeg", date: "2025/12/24" },
     {src: "photos/mexico-city-coyoacan.jpeg", date: "2025/12/24" },
