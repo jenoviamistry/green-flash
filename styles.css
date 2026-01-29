@@ -33,7 +33,7 @@ html, body {
 .mockup {
     position: relative;
     flex-shrink: 0;
-    height: max(120vh, 70vw);
+    height: max(125vh, 75vw);
     width: auto;
     aspect-ratio: 2048 / 1280; 
     margin-top: 0vh;
