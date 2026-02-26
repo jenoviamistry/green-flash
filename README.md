@@ -4,7 +4,9 @@
 <br><br>Alongside my systems and embedded work, this project demonstrates my ability to design intentional user-facing interfaces, translate physical interaction patterns into software, manage user interface state cleanly, and ship a polished frontend product end-to-end.  
 
 <h2>Demo</h2>
-![Project Demo](green-camera-gif.gif)
+<p align="center">
+  <img src="green-camera-gif.gif" width="800"/>
+</p>
 
 <h2>Features</h2>
 <b>Directional photo navigation</b><br>
