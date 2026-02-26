@@ -5,7 +5,7 @@
 
 <h2>Demo</h2>
 <p align="center">
-  <img src="green-camera-gif.gif" width="800"/>
+  <img src="green-camera-gif.gif" width="400"/>
 </p>
 
 <h2>Features</h2>
