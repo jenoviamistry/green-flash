@@ -3,6 +3,9 @@
 <br><br>The goal was to preserve the behavior: simple, directional navigation through a fixed set of images, mirroring the experience of using a physical camera rather than a traditional photo gallery.
 <br><br>Alongside my systems and embedded work, this project demonstrates my ability to design intentional user-facing interfaces, translate physical interaction patterns into software, manage user interface state cleanly, and ship a polished frontend product end-to-end.  
 
+<h2>Demo</h2>
+![Project Demo](green-camera-gif.gif)
+
 <h2>Features</h2>
 <b>Directional photo navigation</b><br>
 Photos are navigated using left and right controls that map directly to physical camera arrow buttons, preserving the original camera interaction model.
