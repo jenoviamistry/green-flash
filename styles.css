@@ -168,27 +168,24 @@ html, body {
     .hotspot-right { left: 50%; }
  
     .screen {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        border-radius: 0;
-        background: #000;
         display: flex;
         align-items: center;
         justify-content: center;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        height: 75vw;
+        background: #000;
     }
  
     /* full photo visible, black bars fill the rest */
     .screen-photo {
         width: 100%;
-        height: auto;
-        max-height: 60vh;
-        object-fit: contain;
+        height: 100%;
+        object-fit: cover;
         background: #000;
-        aspect-ratio: 4 / 3;
-
     }
  
     .date-text {
