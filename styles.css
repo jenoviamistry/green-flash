@@ -1,138 +1,186 @@
 html, body {
     margin: 0;
     padding: 0;
-    background: #f4f3f1; 
-    overflow-x: hidden; /*stop side scroll when zoomed*/
+    background: #f4f3f1;
+    overflow: hidden;
 }
 
 @font-face {
-  font-family: "CameraDate";
-  src: url("fonts/courbd.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+    font-family: "CameraDate";
+    src: url("fonts/courbd.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
     font-family: 'MyCameraFont';
-    src: url('fonts/Frutiger\ 65\ Bold.otf') format('truetype');
+    src: url('fonts/Frutiger 65 Bold.otf') format('truetype');
 }
 
 .stage {
     width: 100vw;
-    min-height: 100vh; /* min-height allows the container to grow so you can scroll */
+    height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: flex-start; /*stop vertical centering*/
-    overflow-x: hidden;
+    align-items: center;
     background: #f4f3f1;
-    padding-right: 0px;
-    padding-left: 40px;
-
 }
 
 .mockup {
     position: relative;
+    width: min(96vw, 96vh * (686 / 423));
+    height: auto;
+    aspect-ratio: 686 / 423;
     flex-shrink: 0;
-    height: max(125vh, 75vw);
-    width: auto;
-    aspect-ratio: 2048 / 1280; 
-    margin-top: 0vh;
 }
 
 .mockup-img {
     width: 100%;
     height: 100%;
     display: block;
-    pointer-events: none; 
-    object-fit: contain; 
+    pointer-events: none;
+    object-fit: contain;
 }
 
+/* LCD screen — calibrated to web-cam-mockup.png (686x423, no black bars) */
 .screen {
     position: absolute;
-    left: 37.842%;
-    top: 23.203%;
-    width: 13.184%;
-    height: 16.172%;
+    left: 25.5%;
+    top: 37%;
+    width: 27.5%;
+    height: 33%;
     overflow: hidden;
-    border-radius: 2px; 
+    border-radius: 3px;
 }
 
-/*camera image*/
 .screen-photo {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
-    image-rendering: auto;
+    
 }
 
-/*hotspot for left and right clicks*/
+.camera-ui {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.battery-icon {
+    position: absolute;
+    bottom: -3%;
+    right: -4%;
+    width: 17%;
+    opacity: 0.9;
+}
+
+.date-text {
+    position: absolute;
+    bottom: 11%;
+    right: 3%;
+    font-family: "CameraDate", monospace;
+    font-size: clamp(7px, 1.0vw, 9px); /* fixed — max was 1px before */
+    color: #ffd800;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+    letter-spacing: 0.02em;
+}
+
 .hotspot {
-    /*outline: 2px solid red; debugging to see hotspot*/
     position: absolute;
     background: transparent;
     border: 0;
     padding: 0;
     cursor: pointer;
+    /* outline: 2px solid red; */
 }
 
 .hotspot-left {
-    left: 54.2%;
-    top: 29.5%;
-    width: 1.0%;
-    height: 4.0%;
+    left: 59%;
+    top: 44%;
+    width: 3.5%;
+    height: 12%;
 }
 
 .hotspot-right {
-    left: 57%;
-    top: 29.5%;
-    width: 1.0%;
-    height: 4.0%;
+    left: 65%;
+    top: 44%;
+    width: 3.5%;
+    height: 12%;
 }
 
 .camera-instruction {
     position: absolute;
-    /* right above the camera body */
-    top: 15%; 
-    left: 46.5%;
+    top: 7%;
+    left: 50%;
     transform: translateX(-50%);
-    width: 90%;
+    width: 70%;
     text-align: center;
     font-family: 'MyCameraFont', sans-serif;
     font-weight: 700;
-    font-size: 2.5vmin; 
-    color: #2d5a27; 
+    font-size: clamp(10px, 1.8vmin, 18px);
+    color: #2d5a27;
     z-index: 20;
-    pointer-events: none; 
+    pointer-events: none;
+    opacity: 1;
+    transition: opacity 0.6s ease;
 }
 
 .fade-out {
     opacity: 0;
 }
 
-.camera-ui {
-  position: absolute;
-  inset: 0;
-  pointer-events: none; 
-}
+/* Mobile: viewport IS the screen */
+@media (max-width: 640px) {
+    html, body { overflow: hidden; }
 
-.battery-icon {
-  position: absolute;
-  bottom: -5%;
-  right: -7%;
-  width: 17%;
-  opacity: 0.95;
-}
+    .stage {
+        align-items: stretch;
+    }
 
-.date-text {
-  position: absolute;
-  bottom: 8%;
-  right: 2%;
-  font-family: "CameraDate", monospace !important;
-  /*font-size: 1.4vmin;*/
-  font-size: clamp(7px, 0.4vw, 18px);
-  color: #ffd800;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.35);
-  letter-spacing: 0em;
-}
+    .mockup {
+        width: 100vw;
+        height: 100dvh;
+        aspect-ratio: unset;
+    }
 
+    .mockup-img { display: none; }
+
+    .camera-instruction {
+        top: 10%;
+        font-size: 4vw;
+        color: #7ec87e;
+    }
+
+    .hotspot {
+        top: 0;
+        width: 50%;
+        height: 100%;
+    }
+
+    .hotspot-left  { left: 0; }
+    .hotspot-right { left: 50%; }
+
+    .screen {
+        position: absolute;
+        left: 0; top: 0;
+        width: 100%; height: 100%;
+        border-radius: 0;
+        background: #000;
+    }
+
+    .date-text {
+        font-size: clamp(2px, 1.5vw, 2px);
+        bottom: 7%;
+        right: 5%;
+    }
+
+    .battery-icon {
+        width: 7%;
+        bottom: 6%;
+        right: 20%;
+    }
+}
