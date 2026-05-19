@@ -175,10 +175,16 @@ html, body {
         height: 100%;
         border-radius: 0;
         background: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
  
     /* full photo visible, black bars fill the rest */
     .screen-photo {
+        width: 100%;
+        height: auto;
+        max-height: 60vh;
         object-fit: contain;
         background: #000;
     }
