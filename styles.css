@@ -80,7 +80,7 @@ html, body {
 
 .date-text {
     position: absolute;
-    bottom: 9%;
+    bottom: 10%;
     right: 3%;
     font-family: "CameraDate", monospace;
     font-size: clamp(7px, 1.0vw, 9px); /* fixed — max was 1px before */
@@ -133,51 +133,62 @@ html, body {
     opacity: 0;
 }
 
-/* Mobile: viewport IS the screen */
+/* Mobile */
 @media (max-width: 640px) {
     html, body { overflow: hidden; }
-
+ 
     .stage {
         align-items: stretch;
+        background: #000;
     }
-
+ 
     .mockup {
         width: 100vw;
         height: 100dvh;
         aspect-ratio: unset;
+        background: #000;
     }
-
+ 
     .mockup-img { display: none; }
-
+ 
     .camera-instruction {
         top: 10%;
         font-size: 4vw;
         color: #7ec87e;
+        z-index: 30;
     }
-
+ 
     .hotspot {
         top: 0;
         width: 50%;
         height: 100%;
     }
-
+ 
     .hotspot-left  { left: 0; }
     .hotspot-right { left: 50%; }
-
+ 
     .screen {
         position: absolute;
-        left: 0; top: 0;
-        width: 100%; height: 100%;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
         border-radius: 0;
         background: #000;
     }
-
+ 
+    /* full photo visible, black bars fill the rest */
+    .screen-photo {
+        object-fit: contain;
+        background: #000;
+    }
+ 
     .date-text {
-        font-size: clamp(2px, 1.5vw, 2px);
+        font-size: clamp(10px, 3vw, 14px);
         bottom: 7%;
         right: 5%;
     }
-
+ 
     .battery-icon {
         width: 7%;
         bottom: 6%;
