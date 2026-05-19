@@ -190,13 +190,15 @@ html, body {
  
     .date-text {
         font-size: clamp(10px, 3vw, 14px);
-        bottom: 7%;
-        right: 5%;
+        bottom: 10%;
+        right: 3%;
     }
  
     .battery-icon {
-        width: 7%;
-        bottom: 6%;
-        right: 20%;
+        position: absolute;
+        bottom: -3%;
+        right: -4%;
+        width: 15%;
+        opacity: 0.9;
     }
 }
