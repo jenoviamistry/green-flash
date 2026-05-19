@@ -86,4 +86,12 @@ window.addEventListener("touchend", (e) => {
     }
 });
 
+const isMobile = window.innerWidth <= 640;
+const instruction = document.getElementById('instruction-text');
+if (instruction) {
+    instruction.textContent = isMobile 
+        ? 'Swipe to flip through' 
+        : 'Press < > on camera to flip through';
+}
+
 render();

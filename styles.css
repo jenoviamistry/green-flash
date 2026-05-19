@@ -114,14 +114,14 @@ html, body {
 
 .camera-instruction {
     position: absolute;
-    top: 7%;
-    left: 50%;
+    top: 20%;
+    left: 45%;
     transform: translateX(-50%);
     width: 70%;
     text-align: center;
     font-family: 'MyCameraFont', sans-serif;
     font-weight: 700;
-    font-size: clamp(10px, 1.8vmin, 18px);
+    font-size: clamp(15px, 1.8vmin, 18px);
     color: #2d5a27;
     z-index: 20;
     pointer-events: none;
@@ -202,3 +202,4 @@ html, body {
         opacity: 0.9;
     }
 }
+
