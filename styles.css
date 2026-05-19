@@ -152,8 +152,8 @@ html, body {
     .mockup-img { display: none; }
  
     .camera-instruction {
-        top: 10%;
-        left: 50%;
+        top: 15%;
+        left: 55%;
         transform: translateX(-50%);
         width: 100%;
         text-align: center;
