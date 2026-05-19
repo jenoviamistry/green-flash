@@ -187,6 +187,8 @@ html, body {
         max-height: 60vh;
         object-fit: contain;
         background: #000;
+        aspect-ratio: 4 / 3;
+
     }
  
     .date-text {
