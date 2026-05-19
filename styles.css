@@ -80,7 +80,7 @@ html, body {
 
 .date-text {
     position: absolute;
-    bottom: 11%;
+    bottom: 9%;
     right: 3%;
     font-family: "CameraDate", monospace;
     font-size: clamp(7px, 1.0vw, 9px); /* fixed — max was 1px before */
